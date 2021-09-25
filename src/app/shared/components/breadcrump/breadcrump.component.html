@@ -1,0 +1,9 @@
+<div class="breadcrumb-item">
+    <span>
+        <i class="fa fa-home"></i>
+        {{parentPath}}
+        <span *ngFor="let i of breadcrumbArr" style="color: black;">
+            <em class="mr-1">/</em>{{i}}
+        </span>
+    </span>
+</div>

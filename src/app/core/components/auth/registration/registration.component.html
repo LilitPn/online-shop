@@ -1,0 +1,94 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <h5 class="modal-title">Registration</h5>
+        <button type="button" class="btn closeBtn" (click)="close()">
+            <span>×</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+
+        <form class="form-horizontal" [formGroup]="userForm" (submit)="signIn()">
+            <div class="form-group">
+                <label for="name"><i class="fa fa-user"></i>Name</label>
+                <input type="text" class="form-control" formControlName="name">
+                <div *ngIf="submitted">
+                    <em 
+                        [style.display]="userForm.get('name').errors?.required ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.requiredUsername}}</em>
+                    <em 
+                        [style.display]="userForm.get('name').errors?.minlength ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.shortUsername}}</em>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                <input type="email" class="form-control" formControlName="email">
+                <div *ngIf="submitted">
+                    <em 
+                        [style.display]="userForm.get('email').errors?.required ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.requiredEmail}}</em>
+                    <em 
+                        [style.display]="userForm.get('email').errors?.pattern ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.invalidEmail}}</em>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fa fa-lock"></i>Password</label>
+                <input type="password" class="form-control" formControlName="password">
+                <div *ngIf="submitted">
+                    <em 
+                        [style.display]="userForm.get('password').errors?.required ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.requiredPassword}}</em>
+                    <em 
+                        [style.display]="userForm.get('password').errors?.pattern ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.invalidPassword}}</em>
+                    <em   
+                        [style.display]="userForm.get('password').errors?.minlength ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.shortPassword}}</em>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword"><i class="fa fa-lock"></i>Confirm password</label>
+                <input type="password" class="form-control" formControlName="confirmPassword">
+                <div *ngIf="submitted">
+                    <em 
+                        [style.display]="userForm.get('confirmPassword').errors?.required ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.requiredConfirmPassword}}</em>
+                    <em 
+                        [style.display]="userForm.get('confirmPassword').errors?.minlength ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.confirmPasswordNotMatch}}</em>
+                    <em 
+                        [style.display]="userForm.get('confirmPassword').errors?.mustMatch ? 'block' : 'none'" 
+                        class="error"
+                    >{{errors.confirmPasswordNotMatch}}</em>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control">
+                    Sign in
+                </button>
+            </div>
+        </form>
+
+        <div class="form-group text-center">
+            <p class="mt-2 mb-2">Are you already registered?</p>
+        </div>
+        <div class="form-group text-center mb-0">
+            <button class="btn btn-secondary form-control" (click)="openLoginModal()">
+                Log in
+            </button>
+        </div>
+
+    </div>
+</div>

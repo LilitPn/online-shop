@@ -1,0 +1,114 @@
+<div class="container-fluid p-0 contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 breadcrumb p-2">
+                <app-breadcrump [parentPath]="parentUrl"></app-breadcrump>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+                <img src="assets/img/banner.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12 col-12">
+                <div class=" box">
+                    <h1>Contact</h1>
+                    <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
+                    <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <h3><i class="fa fa-map-marker"></i>Address</h3>
+                            <p>13/25 New Avenue<br>New Heaven<br>45Y 73J<br>England<br>Great Britain</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <h3><i class="fa fa-phone"></i> Call center</h3>
+                            <p class="text-muted">This number is toll free if calling from Great Britain otherwise we advise you to use the electronic form of communication.</p>
+                            <p><strong>+33 555 444 333</strong></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <h3><i class="fa fa-envelope"></i> Electronic support</h3>
+                            <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+                            <ul>
+                                <li><strong><a href="mailto:">info@fakeemail.com</a></strong></li>
+                                <li><strong><a href="#">Ticketio</a></strong> - our ticketing support platform</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="row box">
+                                <h3>Contuct us!</h3>
+                                <form class="form-horizontal" [formGroup]="contactForm" (ngSubmit)="sendEmailMessage()">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <label>Firstname</label>
+                                            <input type="text" class="form-control" formControlName="firstname">
+                                            <div *ngIf="submitted">
+                                                <em 
+                                                    [style.display]="contactForm.get('firstname').errors?.required ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.requiredFirstname}}</em>
+                                                <em 
+                                                    [style.display]="contactForm.get('firstname').errors?.minlength ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.shortFirstname}}</em>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <label>Lastname</label>
+                                            <input type="text" class="form-control" formControlName="lastname"> 
+                                            <div *ngIf="submitted">
+                                                <em 
+                                                    [style.display]="contactForm.get('lastname').errors?.required ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.requiredLastname}}</em>
+                                                <em 
+                                                    [style.display]="contactForm.get('lastname').errors?.minlength ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.shortLastname}}</em>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" formControlName="email">
+                                            <div *ngIf="submitted">
+                                                <em 
+                                                    [style.display]="contactForm.get('email').errors?.required ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.requiredEmail}}</em>
+                                                <em 
+                                                    [style.display]="contactForm.get('email').errors?.pattern ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.invalidEmail}}</em>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <label>Subject</label>
+                                            <input type="text" class="form-control" formControlName="subject">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <label>Message</label>
+                                            <textarea class="form-control" formControlName="message"></textarea>
+                                            <div *ngIf="submitted">
+                                                <em 
+                                                    [style.display]="contactForm.get('message').errors?.required ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.requiredMessage}}</em>
+                                                <em 
+                                                    [style.display]="contactForm.get('message').errors?.minlength ? 'block' : 'none'" 
+                                                    class="error"
+                                                >{{errors.shortMessage}}</em>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group text-center mt-3">
+                                                <button class="btn btn-primary form-control" type="submit">
+                                                    <i class="fa fa-envelope-o"></i> Send message
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.modal-sm{
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin: 12% 39%;
+    min-width: 300px;
+}

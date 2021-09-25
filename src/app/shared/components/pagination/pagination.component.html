@@ -1,0 +1,15 @@
+<div class="row mt-4 conatiner" *ngIf="pageCount.length > 1">
+    <ul class="pagination">
+        <li class="page-item" (click)="changePage('previous')">
+            <span class="page-link">«</span>
+        </li>
+        <span *ngFor="let page of pageCount">
+            <li class="page-item" [ngClass]="{ 'active' : currentPage == page }" (click)="changePage(page)">
+                <span class="page-link">{{page}}</span>
+            </li>
+        </span>
+        <li class="page-item" (click)="changePage('next')">
+            <span class="page-link">»</span>
+        </li>
+    </ul>
+</div>

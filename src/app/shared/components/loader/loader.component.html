@@ -1,0 +1,11 @@
+<div 
+    class="lds-ellipsis"  
+    [ngStyle]="(loading |async )== true 
+        ? {'display':'block'} 
+        : {'display':'none'}"
+>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
