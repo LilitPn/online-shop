@@ -26,7 +26,7 @@ export class BreadcrumpComponent implements OnInit {
 
   createBreadctumb(): void {
     let urlArr = this.router.url.split('/');
-    urlArr = urlArr.slice(urlArr.indexOf(this.parentPath) + 1);
+    urlArr = urlArr.slice(urlArr.indexOf(this.parentPath));
 
     for (let i = 0; i < urlArr.length; i++) {
       this.breadcrumbArr.push(urlArr[i].charAt(0).toUpperCase() + urlArr[i].slice(1));

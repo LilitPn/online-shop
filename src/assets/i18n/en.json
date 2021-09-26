@@ -1,9 +1,15 @@
 {
-    "Registration": "Registration",
-    "Login": "Login",
-    "Contact": "Contact",
-    "en": "en",
-    "ru": "ru",
-    "hy": "hy"
-   
+    "registration": "Registration",
+    "login": "Login",
+    "contact": "Contact",
+    "en": "EN",
+    "ru": "RU",
+    "hy": "HY",
+    "pages": "Pages",
+    "about": "About us",
+    "user_section": "User section",
+    "where_to_find_us": "Where to find us",
+    "stay_in_touch": "Stay in touch",
+    "england": "Great Britain",
+    "new_avenue": "New Avenue"
 }

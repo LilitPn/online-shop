@@ -15,7 +15,7 @@ import { SwalAlertService } from 'src/app/shared/services/swalAlert.service';
   styleUrls: ['./contact-page.component.css']
 })
 export class ContactPageComponent implements OnInit {
-  parentUrl: string = 'market';
+  parentUrl: string = 'Market';
   errors = EmailMessageIErrorsEnum;
   contactForm: any;
   submitted: boolean = false;

@@ -1,8 +1,15 @@
 {
-    "Registration": "Գրանցվիր",
-    "Login": "Մուտք",
-    "Contact": "Կապ",
+    "registration": "Գրանցվիր",
+    "login": "Մուտք",
+    "contact": "Կապ",
     "en": "Անգ",
     "ru": "Ռուս",
-    "hy": "Հայ"
+    "hy": "Հայ",
+    "pages": "Բաժիններ",
+    "about": "Մեր մասին",
+    "user_section": "Օգտ. բաժին",
+    "where_to_find_us": "Ինչպես մեզ գտնել",
+    "stay_in_touch": "Սոց. ցանցեր",
+    "england": "Անգլիա",
+    "new_avenue": "Նոր Ավենյու"
 }

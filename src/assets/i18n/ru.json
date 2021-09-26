@@ -1,8 +1,15 @@
 {
-    "Registration": "Регистрация",
-    "Login": "Войти",
-    "Contact": "I am sure you must have a name!",
-    "en": "анг",
-    "ru": "ру",
-    "hy": "арм"
+    "registration": "Регистрация",
+    "login": "Войти",
+    "contact": "Контакт",
+    "en": "Aнг",
+    "ru": "Pу",
+    "hy": "Aрм",
+    "pages": "Cтраницы",
+    "about": "О нас",
+    "user_section": "Раздел пользователей",
+    "where_to_find_us": "Как найти нас",
+    "stay_in_touch": "Соцсети",
+    "england": "Англия",
+    "new_avenue": "Новая Авеню"
 }

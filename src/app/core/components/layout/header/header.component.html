@@ -3,10 +3,10 @@
         <div class="navbar_top">
             <ul class="menu list-inline mb-0">     
                 <li class="list-inline-item" (click)="openRegistrationModal()">
-                    {{'Registration' | translate }}
+                    {{'registration' | translate }}
                 </li>
                 <li class="list-inline-item" [style.display]="!isLoggedIn ? 'block':'none'"  (click)="openLoginModal()">
-                    {{'Login' | translate }}
+                    {{'login' | translate }}
                 </li>
                 <li class="list-inline-item" [style.display]="isLoggedIn ? 'block':'none'"  (click)="logout()">Logout</li>
       

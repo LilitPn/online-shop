@@ -163,14 +163,38 @@
                     }
                 ],
                 "mainCarouselItems": [
-                    {"src": "/assets/img/main-slider1.jpg", "alt":"Slider 1", "class":"active"},
-                    {"src": "/assets/img/main-slider2.jpg", "alt":"Slider 2", "class":""},
-                    {"src": "/assets/img/main-slider3.jpg", "alt":"Slider 3", "class":""}
+                    {
+                        "src": "/assets/img/main-slider1.jpg",
+                        "alt": "Slider 1",
+                        "class": "active"
+                    },
+                    {
+                        "src": "/assets/img/main-slider2.jpg",
+                        "alt": "Slider 2",
+                        "class": ""
+                    },
+                    {
+                        "src": "/assets/img/main-slider3.jpg",
+                        "alt": "Slider 3",
+                        "class": ""
+                    }
                 ],
                 "insparedCarouselItems": [
-                    {"src": "/assets/img/getinspired1.jpg", "alt":"Inspired 1", "class":"active"},
-                    {"src": "/assets/img/getinspired2.jpg", "alt":"Inspared 2", "class":""},
-                    {"src": "/assets/img/getinspired3.jpg", "alt":"Inspared 3", "class":""}
+                    {
+                        "src": "/assets/img/getinspired1.jpg",
+                        "alt": "Inspired 1",
+                        "class": "active"
+                    },
+                    {
+                        "src": "/assets/img/getinspired2.jpg",
+                        "alt": "Inspared 2",
+                        "class": ""
+                    },
+                    {
+                        "src": "/assets/img/getinspired3.jpg",
+                        "alt": "Inspared 3",
+                        "class": ""
+                    }
                 ]
             }
         },
@@ -179,9 +203,9 @@
             "data": {
                 "topNavigationData": [
                     {
-                        "link": "./market/contact",
+                        "link": "./contact",
                         "exact": false,
-                        "name": "Contact"
+                        "name": "contact"
                     }
                 ],
                 "mainNavigationData": [
@@ -202,34 +226,21 @@
                                 "sectionName": [
                                     "T-shirts",
                                     "Shirts",
-                                    "Pants",
-                                    "Accessories"
+                                    "Pants"
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
                                     "Trainers",
-                                    "Sandals",
-                                    "Hiking shoes",
-                                    "Casual"
+                                    "Sandals"
                                 ]
                             },
                             {
                                 "sectionTitle": "Accessories",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals"
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Featured",
-                                "sectionName": [
-                                    "Trainers",
-                                    "Sandals",
-                                    "Sandals",
-                                    "Hiking shoes",
-                                    "Casual"
+                                    "Watches",
+                                    "Jeweleries"
                                 ]
                             }
                         ]
@@ -243,29 +254,23 @@
                             {
                                 "sectionTitle": "Clothing",
                                 "sectionName": [
-                                    "T-shirts",
-                                    "Shirts",
-                                    "Pants",
-                                    "Accessories"
+                                    "Dresses",
+                                    "Shirts"
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
                                     "Trainers",
-                                    "Sandals",
-                                    "Hiking shoes",
-                                    "Casual"
+                                    "Sandals"
                                 ]
                             },
                             {
-                                "sectionTitle": "Featured",
+                                "sectionTitle": "Accessories",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals",
-                                    "Sandals",
-                                    "Hiking shoes",
-                                    "Casual"
+                                    "Watches",
+                                    "Jeweleries",
+                                    "Parfume"
                                 ]
                             }
                         ]
@@ -280,18 +285,14 @@
                                 "sectionTitle": "Clothing",
                                 "sectionName": [
                                     "T-shirts",
-                                    "Shirts",
-                                    "Pants",
-                                    "Accessories"
+                                    "Shirts"
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
                                     "Trainers",
-                                    "Sandals",
-                                    "Hiking shoes",
-                                    "Casual"
+                                    "Sandals"
                                 ]
                             },
                             {
