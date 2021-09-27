@@ -1,0 +1,121 @@
+.home{
+    background-color: whitesmoke;
+    z-index: 1;
+  }
+  
+  /*-------------------- advantages ---------------------*/
+  #advantages{
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  .home #advantage .img-fluid{
+    margin:20px auto;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  #advantages .box .icon {
+    position: absolute;
+    font-size: 120px;
+    width: 100%;
+    text-align: center;
+    top: 11px;
+    left: 0;
+    height: 100%;
+    float: left;
+    color: #eee;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+  }
+  
+  #advantages .box h4 {
+    position: relative;
+    margin: 0 0 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    z-index: 3;
+    text-align: center;
+    color:#74c8b7;
+  }
+  
+  #advantages .box p {
+    position: relative;
+    color: #555;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  #advantages .box {
+    background: #fff;
+    border: solid 1px #e6e6e6;
+    padding: 30px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* --------Зщые------------- */
+   #blog-homepage{
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  .hot-container{
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  
+  /* inspired */
+  .box.slideshow {
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+  
+  .box {
+    background: #fff;
+    margin: 0 0 30px;
+    border: solid 1px #e6e6e6;
+    padding: 30px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .boxContainer{
+    min-height: 200px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .read-more{
+    color: #fff;
+    background-color: #4fbfa8;
+    border-color: #4fbfa8;
+  }
+  
+  @media only screen and (max-width:768px){
+    .advantage{
+      margin-bottom: 20px;
+    }
+  
+    .box{
+      padding: 40px;
+    }
+  
+    .front .img-fluid{
+      width: 100%!important;
+    }
+  }

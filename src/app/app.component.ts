@@ -27,6 +27,6 @@ export class AppComponent {
   ngOnInit(): void {
     setTimeout(() => {
       this._modalService.modalContainer = this.modal
-    }, 100)
+    }, 1000)
   }
 }

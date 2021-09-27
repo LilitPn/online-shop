@@ -4,17 +4,16 @@ import { first } from 'rxjs/operators';
 
 import { EmailMessageIErrorsEnum } from 'src/app/core/interfaces/shared_components.interfaces';
 
-import { ContactService } from 'src/app/modules/home/services/contact.service';
+import { ContactService } from 'src/app/modules/web_market/contuct/services/contact.service';
 import { SwalAlertService } from 'src/app/shared/services/swalAlert.service';
 
 
-
 @Component({
-  selector: 'app-contact-page',
-  templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.css']
+  selector: 'app-contuct',
+  templateUrl: './contuct.component.html',
+  styleUrls: ['./contuct.component.css']
 })
-export class ContactPageComponent implements OnInit {
+export class ContuctComponent implements OnInit {
   parentUrl: string = 'Market';
   errors = EmailMessageIErrorsEnum;
   contactForm: any;

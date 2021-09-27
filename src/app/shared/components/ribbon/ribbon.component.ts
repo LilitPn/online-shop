@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { IRibbons } from 'src/app/modules/home/models/home.models';
+import { IRibbons } from 'src/app/modules/web_market/home/models/home.models';
 
 
 @Component({

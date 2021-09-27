@@ -9,9 +9,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './modules/home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { StoreModule } from '@ngrx/store';
+import { dataReducer } from './core/store/store.reduces';
 
 
 
@@ -27,7 +28,6 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HomeModule,
     SharedModule,
     TranslateModule.forRoot({
       loader: {
@@ -35,7 +35,8 @@ import { CoreModule } from './core/core.module';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    StoreModule.forRoot({ data: dataReducer })
   ],
   bootstrap: [AppComponent]
 })

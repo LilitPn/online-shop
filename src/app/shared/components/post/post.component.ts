@@ -39,6 +39,5 @@ export class PostComponent implements AfterContentInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log(this.p)
   }
 }

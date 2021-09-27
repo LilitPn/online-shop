@@ -6,17 +6,16 @@ import { CoreModule } from 'src/app/core/core.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
-import { HomePageComponent } from './components/home-page/home-page.component';
-import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { HomeComponent } from './components/home.component';
 
-import { ContactService } from './services/contact.service';
+import { HomeService } from './services/home.service';
+
 
 
 
 @NgModule({
   declarations: [
-    HomePageComponent,
-    ContactPageComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +25,7 @@ import { ContactService } from './services/contact.service';
     CoreModule
   ],
   providers: [
-    ContactService
+    HomeService
   ]
 })
 export class HomeModule { }

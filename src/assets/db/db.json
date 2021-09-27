@@ -203,103 +203,155 @@
             "data": {
                 "topNavigationData": [
                     {
-                        "link": "./contact",
+                        "link": "./contuct",
                         "exact": false,
                         "name": "contact"
                     }
                 ],
                 "mainNavigationData": [
                     {
-                        "link": "./market",
-                        "exact": true,
                         "name": "Home",
                         "hasCaret": false
                     },
                     {
-                        "link": "./men",
-                        "exact": true,
                         "name": "Men",
                         "hasCaret": true,
                         "children": [
                             {
                                 "sectionTitle": "Clothing",
                                 "sectionName": [
-                                    "T-shirts",
-                                    "Shirts",
-                                    "Pants"
+                                    {
+                                        "sectionSubName": "T-shirts",
+                                        "link": "./section/men"
+                                    },
+                                    {
+                                        "sectionSubName": "Shirts",
+                                        "link": "./men/shirts"
+                                    },
+                                    {
+                                        "sectionSubName": "Pants",
+                                        "link": "./men/pants"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals"
+                                    {
+                                        "sectionSubName": "Trainers",
+                                        "link": "./men/trainers"
+                                    },
+                                    {
+                                        "sectionSubName": "Sandals",
+                                        "link": "./men/sandals"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Accessories",
                                 "sectionName": [
-                                    "Watches",
-                                    "Jeweleries"
+                                    {
+                                        "sectionSubName": "Watches",
+                                        "link": "./men/watches"
+                                    },
+                                    {
+                                        "sectionSubName": "Jeweleries",
+                                        "link": "./men/jeweleries"
+                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "link": "./women",
-                        "exact": true,
                         "name": "Women",
                         "hasCaret": true,
                         "children": [
                             {
                                 "sectionTitle": "Clothing",
                                 "sectionName": [
-                                    "Dresses",
-                                    "Shirts"
+                                    {
+                                        "sectionSubName": "Dresses",
+                                        "link": "./women/dresses"
+                                    },
+                                    {
+                                        "sectionSubName": "Shirts",
+                                        "link": "./women/shirts"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals"
+                                    {
+                                        "sectionSubName": "Trainers",
+                                        "link": "./women/shirts"
+                                    },
+                                    {
+                                        "sectionSubName": "Shirts",
+                                        "link": "./women/sandals"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Accessories",
                                 "sectionName": [
-                                    "Watches",
-                                    "Jeweleries",
-                                    "Parfume"
+                                    {
+                                        "sectionSubName": "Watches",
+                                        "link": "./women/watches"
+                                    },
+                                    {
+                                        "sectionSubName": "Jeweleries",
+                                        "link": "./women/jeweleries"
+                                    },
+                                    {
+                                        "sectionSubName": "Parfume",
+                                        "link": "./women/parfume"
+                                    }
                                 ]
                             }
                         ]
                     },
                     {
-                        "link": "./children",
-                        "exact": true,
                         "name": "Children",
                         "hasCaret": true,
                         "children": [
                             {
                                 "sectionTitle": "Clothing",
                                 "sectionName": [
-                                    "T-shirts",
-                                    "Shirts"
+                                    {
+                                        "sectionSubName": "T-shirts",
+                                        "link": "./children/t-shirts"
+                                    },
+                                    {
+                                        "sectionSubName": "Shirts",
+                                        "link": "./children/shirts"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Shoes",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals"
+                                    {
+                                        "sectionSubName": "Trainers",
+                                        "link": "./children/trainers"
+                                    },
+                                    {
+                                        "sectionSubName": "Sandals",
+                                        "link": "./children/sandals"
+                                    }
                                 ]
                             },
                             {
                                 "sectionTitle": "Accessories",
                                 "sectionName": [
-                                    "Trainers",
-                                    "Sandals"
+                                    {
+                                        "sectionSubName": "Trainers",
+                                        "link": "./children/trainers"
+                                    },
+                                    {
+                                        "sectionSubName": "Sandals",
+                                        "link": "./children/sandals"
+                                    }
                                 ]
                             }
                         ]

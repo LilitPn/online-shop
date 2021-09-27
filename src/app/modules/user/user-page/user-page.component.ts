@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { InitDataService } from "src/app/core/services/InitData.service";
-import { IRibbons } from "../../home/models/home.models";
+import { IRibbons } from "../../web_market/home/models/home.models";
 
 
 

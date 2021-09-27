@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 breadcrumb">
+            <app-breadcrump [parentPath]="parentUrl"></app-breadcrump>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 box">
+            <h1>Mens T-shirts</h1>
+            <p>
+                In our Mens T-shirts department we offer wide selection of the best products we have found and
+                carefully selected worldwide.
+            </p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="box info-bar">
+                <div class="products-showing col-lg-4">
+                    Showing <strong>5</strong> of <strong>25</strong> products
+                </div>
+
+                <div class="products-number col-lg-4">
+                    <strong>Show</strong>
+                    <a href="#" class="btn btn-default btn-sm btn-primary">5</a>
+                    <a href="#" class="btn btn-default btn-sm">10</a>
+                    <a href="#" class="btn btn-default btn-sm">All</a>
+                    <strong>products</strong>
+                </div>
+
+                <div class="products-sort-by col-lg-4">
+                    <strong>Sort by</strong>
+                    <select name="sort-by" class="form-control">
+                        <option>Price</option>
+                        <option>Name</option>
+                        <option>Sales first</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hot-container row mt-4 p-0">
+            <!-- <div class="col-lg-3 col-md-3 col-sm-12 col-12 active" *ngFor="let ribbon of currentRibbons">
+               <ribon [ribbon]="ribbon"></ribon>
+            </div> -->
+        </div>
+    </div>
+</div>

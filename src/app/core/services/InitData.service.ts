@@ -6,9 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class InitDataService {
-  constructor(
-    public http: HttpClient
-  ) { }
+  constructor(public http: HttpClient) { }
 
   getInitData(): Observable<any> {
     return this.http.get("assets/db/db.json")
