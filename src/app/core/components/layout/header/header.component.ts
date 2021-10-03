@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-import { MainNavigationItem, TopNavigationItem } from 'src/app/core/interfaces/layout.interface';
-
 import { AuthService } from 'src/app/core/services/auth.service';
 import { InitDataService } from 'src/app/core/services/InitData.service';
 import { ModalDataService } from 'src/app/shared/services/modalData.service';
@@ -14,6 +12,25 @@ import { RegistrationComponent } from '../../auth/registration/registration.comp
 
 
 
+interface ITopNavigationModel {
+  link: string,
+  exact: boolean,
+  name: string
+}
+
+interface IMainNavigationItemModel {
+  link: string,
+  exact: boolean,
+  name: string,
+  hasCaret: boolean,
+  children?: ISubMenu[]
+}
+
+interface ISubMenu {
+  sectionTitle: string,
+  sectionName: string[]
+}
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -21,11 +38,12 @@ import { RegistrationComponent } from '../../auth/registration/registration.comp
 })
 export class HeaderComponent implements OnInit {
   isOpen: number = null;
-  mainIsOpen: number = 0;
+  menuIsOpen: number = 0;
+  subMenuIsOpen: number = 0;
   showMobileNavigation: boolean = false;
   searchIsShown: boolean = false;
-  topNavigationData: TopNavigationItem[];
-  mainNavigationData: MainNavigationItem[];
+  topNavigationConfigs: ITopNavigationModel[];
+  mainNavigationConfigs: IMainNavigationItemModel[];
   isLoggedIn: boolean = false;
   isAdmin: boolean = false;
 
@@ -44,8 +62,8 @@ export class HeaderComponent implements OnInit {
     this._initDataService
       .getInitData()
       .subscribe(res => {
-        this.topNavigationData = res.pages[1].data.topNavigationData;
-        this.mainNavigationData = res.pages[1].data.mainNavigationData;
+        this.topNavigationConfigs = res.sections[0].data;
+        this.mainNavigationConfigs = res.sections[1].data;
       });
   }
 
@@ -54,15 +72,19 @@ export class HeaderComponent implements OnInit {
   }
 
   openMobileNavigation(section: number): void {
+    console.log(section);
+
     this.isOpen == section ? this.isOpen = 0 : this.isOpen = section;
   }
 
-  openSubNavigation(section: number): void {
-    this.mainIsOpen == section ? this.mainIsOpen = 0 : this.mainIsOpen = section;
+  changeNavigation(section: number): void {
+    this.menuIsOpen == section ? this.menuIsOpen = 0 : this.menuIsOpen = section;
   }
 
-  logout(): void {
-    this.authService.logout();
+  changeSubNavigation(section: number): void {
+    this.subMenuIsOpen == section ? this.subMenuIsOpen = null : this.subMenuIsOpen = section;
+
+    setTimeout(() => { this.menuIsOpen = 0 }, 1000)
   }
 
   openLoginModal(): void {
@@ -71,5 +93,9 @@ export class HeaderComponent implements OnInit {
 
   openRegistrationModal(): void {
     this._modalService.showModalComponent(OverlayModalComponent, RegistrationComponent);
+  }
+
+  logout(): void {
+    this.authService.logout();
   }
 }

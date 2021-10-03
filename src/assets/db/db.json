@@ -28,7 +28,8 @@
                         "price": "$111.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -37,7 +38,8 @@
                         "price": "$222.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": false
+                        "hasGift": false,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -46,7 +48,8 @@
                         "price": "$333.00",
                         "hasSale": false,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -55,7 +58,8 @@
                         "price": "$111.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -64,7 +68,8 @@
                         "price": "$222.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": false
+                        "hasGift": false,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -73,7 +78,8 @@
                         "price": "$333.00",
                         "hasSale": false,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -82,7 +88,8 @@
                         "price": "$111.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -91,7 +98,8 @@
                         "price": "$222.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": false
+                        "hasGift": false,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -100,7 +108,8 @@
                         "price": "$333.00",
                         "hasSale": false,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -109,7 +118,8 @@
                         "price": "$111.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -118,7 +128,8 @@
                         "price": "$222.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": false
+                        "hasGift": false,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -127,7 +138,8 @@
                         "price": "$333.00",
                         "hasSale": false,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -136,7 +148,8 @@
                         "price": "$111.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": true
+                        "hasGift": true,
+                        "category": "woman"
                     },
                     {
                         "link": "#",
@@ -145,7 +158,8 @@
                         "price": "$222.00",
                         "hasSale": true,
                         "hasNew": true,
-                        "hasGift": false
+                        "hasGift": false,
+                        "category": "woman"
                     }
                 ],
                 "fashionPosts": [
@@ -197,167 +211,170 @@
                     }
                 ]
             }
+        }
+    ],
+    "sections": [
+        {
+            "section": "topNavigation",
+            "data": [
+                {
+                    "link": "./contuct",
+                    "exact": false,
+                    "name": "contact"
+                }
+            ]
         },
         {
-            "page": "menu",
-            "data": {
-                "topNavigationData": [
-                    {
-                        "link": "./contuct",
-                        "exact": false,
-                        "name": "contact"
-                    }
-                ],
-                "mainNavigationData": [
-                    {
-                        "name": "Home",
-                        "hasCaret": false
-                    },
-                    {
-                        "name": "Men",
-                        "hasCaret": true,
-                        "children": [
-                            {
-                                "sectionTitle": "Clothing",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "T-shirts",
-                                        "link": "./section/men"
-                                    },
-                                    {
-                                        "sectionSubName": "Shirts",
-                                        "link": "./men/shirts"
-                                    },
-                                    {
-                                        "sectionSubName": "Pants",
-                                        "link": "./men/pants"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Shoes",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Trainers",
-                                        "link": "./men/trainers"
-                                    },
-                                    {
-                                        "sectionSubName": "Sandals",
-                                        "link": "./men/sandals"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Accessories",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Watches",
-                                        "link": "./men/watches"
-                                    },
-                                    {
-                                        "sectionSubName": "Jeweleries",
-                                        "link": "./men/jeweleries"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Women",
-                        "hasCaret": true,
-                        "children": [
-                            {
-                                "sectionTitle": "Clothing",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Dresses",
-                                        "link": "./women/dresses"
-                                    },
-                                    {
-                                        "sectionSubName": "Shirts",
-                                        "link": "./women/shirts"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Shoes",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Trainers",
-                                        "link": "./women/shirts"
-                                    },
-                                    {
-                                        "sectionSubName": "Shirts",
-                                        "link": "./women/sandals"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Accessories",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Watches",
-                                        "link": "./women/watches"
-                                    },
-                                    {
-                                        "sectionSubName": "Jeweleries",
-                                        "link": "./women/jeweleries"
-                                    },
-                                    {
-                                        "sectionSubName": "Parfume",
-                                        "link": "./women/parfume"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Children",
-                        "hasCaret": true,
-                        "children": [
-                            {
-                                "sectionTitle": "Clothing",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "T-shirts",
-                                        "link": "./children/t-shirts"
-                                    },
-                                    {
-                                        "sectionSubName": "Shirts",
-                                        "link": "./children/shirts"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Shoes",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Trainers",
-                                        "link": "./children/trainers"
-                                    },
-                                    {
-                                        "sectionSubName": "Sandals",
-                                        "link": "./children/sandals"
-                                    }
-                                ]
-                            },
-                            {
-                                "sectionTitle": "Accessories",
-                                "sectionName": [
-                                    {
-                                        "sectionSubName": "Trainers",
-                                        "link": "./children/trainers"
-                                    },
-                                    {
-                                        "sectionSubName": "Sandals",
-                                        "link": "./children/sandals"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
+            "section": "mainNavigation",
+            "data": [
+                {
+                    "name": "Home",
+                    "hasCaret": false
+                },
+                {
+                    "name": "Men",
+                    "hasCaret": true,
+                    "children": [
+                        {
+                            "sectionTitle": "Clothing",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "T-shirts",
+                                    "link": "./section/men"
+                                },
+                                {
+                                    "sectionSubName": "Shirts",
+                                    "link": "./men/shirts"
+                                },
+                                {
+                                    "sectionSubName": "Pants",
+                                    "link": "./men/pants"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Shoes",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Trainers",
+                                    "link": "./men/trainers"
+                                },
+                                {
+                                    "sectionSubName": "Sandals",
+                                    "link": "./men/sandals"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Accessories",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Watches",
+                                    "link": "./men/watches"
+                                },
+                                {
+                                    "sectionSubName": "Jeweleries",
+                                    "link": "./men/jeweleries"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Women",
+                    "hasCaret": true,
+                    "children": [
+                        {
+                            "sectionTitle": "Clothing",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Dresses",
+                                    "link": "./women/dresses"
+                                },
+                                {
+                                    "sectionSubName": "Shirts",
+                                    "link": "./women/shirts"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Shoes",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Trainers",
+                                    "link": "./women/shirts"
+                                },
+                                {
+                                    "sectionSubName": "Shirts",
+                                    "link": "./women/sandals"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Accessories",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Watches",
+                                    "link": "./women/watches"
+                                },
+                                {
+                                    "sectionSubName": "Jeweleries",
+                                    "link": "./women/jeweleries"
+                                },
+                                {
+                                    "sectionSubName": "Parfume",
+                                    "link": "./women/parfume"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Children",
+                    "hasCaret": true,
+                    "children": [
+                        {
+                            "sectionTitle": "Clothing",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "T-shirts",
+                                    "link": "./children/t-shirts"
+                                },
+                                {
+                                    "sectionSubName": "Shirts",
+                                    "link": "./children/shirts"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Shoes",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Trainers",
+                                    "link": "./children/trainers"
+                                },
+                                {
+                                    "sectionSubName": "Sandals",
+                                    "link": "./children/sandals"
+                                }
+                            ]
+                        },
+                        {
+                            "sectionTitle": "Accessories",
+                            "sectionName": [
+                                {
+                                    "sectionSubName": "Trainers",
+                                    "link": "./children/trainers"
+                                },
+                                {
+                                    "sectionSubName": "Sandals",
+                                    "link": "./children/sandals"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

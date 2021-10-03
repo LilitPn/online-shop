@@ -9,9 +9,7 @@ import { PreloaderService } from "../services/preloader.service";
 
 @Injectable()
 export class LoaderInterceptor implements HttpInterceptor {
-    constructor(
-        public loaderService: PreloaderService
-    ) { }
+    constructor(public loaderService: PreloaderService ) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         this.loaderService.show();
